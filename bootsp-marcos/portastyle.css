@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, black 100%, #434343 0%, black 100%);
+    /* background-image: url(ciudad.jpg);*/
+    background-position: center;
+    background-size: 100% 100%; 
+    font-family: 'DynaPuff', cursiva;
+}
+
+
+.sometxt{ /*este code va con la propiedad que esta mas abajo*/
+    
+
+    font-size:4.5em;    
+    color:#fff;
+    letter-spacing: -7px;
+    text-transform:uppercase;
+    animation:blur .75s ease-out infinite;
+    text-shadow:0px 0px 5px #fff,
+    0px 0px 7px #fff; 
+ }
+
+/* @keyframes blur { 
+    
+  from{
+      text-shadow:0px 0px 10px rgb(0, 217, 255),
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #0051ff,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;} asta aki una parte acontinuacion mas abajo propieda:.sometxt
+} */
+
+.container-fluid::before,.container-fluid::after{
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    background: linear-gradient(45deg, #fbff00, #031ba5,#00ff00 , #1900ff,
+    #ffffff, #fb0000, #0004ff, #ffffff, #1c02ad, #0004ff);
+    background-size: 300%;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    z-index: -1;
+    animation: BGgradient 20s ease infinite;
+}
+.container-fluid::after{
+    filter: blur(45px);
+}
+            /* acomodar el cuadro */
+.navbar.navbar-expand-lg.bg-primary{
+    top: 5px;
+    margin: 15px;
+    padding: 15px;
+    background-image: linear-gradient(to right,rgb(41, 41, 41) 100%, #434343 0% );
+    height: 70px;
+    width: 98%;
+    
+}
+.list-group-item{
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}
+ /* marcos de login */
+.carousel-inner {
+    box-shadow:1px 1px 10px rgb(0, 238, 255),1px 1px 10px rgb(0, 238, 255) ;
+    width: 100%;
+    height: 390px;
+    top: 20px;
+    left: 40px;
+    
+}
+    
+.px-lg-5.py-lg-4.p-4 {
+    
+    box-shadow:1px 1px 10px rgb(0, 238, 255),1px 1px 10px rgb(0, 238, 255) ;
+    background-image: url(pc-2022.jpg);
+    background-position: center; 
+    width: 100%;
+    height: 390px;
+    top: 20px;
+    right: 40px;
+    position: relative;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px blue, 5px 5px 10px blue, 0 0 15px rgb(255, 0, 200) ;
+}
+
+  /* boton del login */
+button.btn.btn-primary.w-100{
+    text-shadow: 0 0 5px blue, 0 0 5px blue;
+    box-shadow: 0 0 10px blue, 0 0 10px blue, 0 0 15px rgb(132, 0, 255);
+}
+
+
+.circulo{
+    margin-left: 200px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 15px rgb(68, 0, 255), 0 0 15px fuchsia, 0 0 15px rgb(4, 0, 255);
+    background-image: url(pc-2022.jpg); 
+    background-position:right;
+    border-radius: 50%;
+    
+}
+.textop{
+    padding: 20px;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(252, 252, 252); 
+    position: relative;
+    bottom: 65px;
+    left: 20px;
+    border-style:dashed rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(0, 0, 0), #383838);
+}
+.textop p{
+    font-family: 'Oleo Script Swash Caps', cursiva;
+    color: #fff;
+    padding-top: 30px;
+    text-align: inherit;
+}
+.textop::before,.textop::after{
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    background: linear-gradient(45deg, #2f00ff, #6f00ff, #031ba5, #9900ff,
+    #8400ff, #8a00fb, #00e1ff, #00eff7, #1c02ad, #0004ff);
+    background-size: 300%;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    z-index: -1;
+    animation: BGgradient 20s ease infinite;
+
+}
+.textop::after{
+    filter:blur(40px);
+}
+
+ .sometxt{/* texto led */
+
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(0, 255, 255), 0 0 10px cyan ,0.1em 0.3em 0.1em rgb(0, 225, 255); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .mydiv{ /*desde AKI el marco */
+    
+    bottom: 100px;
+    position:relative;
+    margin: 10% auto 0;
+    width: 500px;
+    height: 90px;
+    background: linear-gradient(90deg, rgb(0, 0, 0), #383838);
+
+}
+.animate-bg:before,.animate-bg:after {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5, #ff004c,
+    #8400ff, #fb0094, #ff6600, #e4e004, #1c02ad, #00c3ff);
+    background-size: 300%;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    z-index: -1;
+    animation: BGgradient 1s ease infinite;
+}
+
+@keyframes BGgradient{
+    0%{
+        background-position:0% 200%;
+    }
+    50%{
+        background-position:200% 0%; 
+     }
+     100%{
+        background-position: 0% 330%;
+     }  
+}
+.animte-bg:after{
+     filter: brightness(1.4);
+  /*  filter: drop-shadow(16px 16px 20px rgb(248,220,97)); */
+    filter: blur(45px);
+}       /* asta aki juntos va con la propiedad sometxt*/
+/* abilidades */
+.estudio{ 
+    padding: 10px;
+    left: 730px;
+    bottom:80px;
+    position:absolute;
+    width: 550px;
+    background: linear-gradient(90deg, rgb(0, 0, 0), #383838);/*tipo de enlace linear-gradient */
+}
+.estudio::before,.estudio::after{
+   
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    background: linear-gradient(45deg, #b3ff00, #91ff00, #031ba5, #2600ff,
+    #8400ff, #8a00fb, #00ff00, #3af700, #1c02ad, #0004ff);
+    background-size: 300%;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    z-index: -1;
+    animation: BGgradient 20s ease infinite;
+
+}
+.estudio::after{
+    filter: blur(40px);
+}
